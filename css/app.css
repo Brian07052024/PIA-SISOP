@@ -1,0 +1,112 @@
+:root{
+    /* fuentes */
+    --fuentePrincipal: "Radio Canada", sans-serif;
+    --fuenteSecundaria: "Open Sans", sans-serif;
+
+    /* colores */
+    --grisOscuro: rgb(20, 20, 20);
+    --negro: rgb(0, 0, 0);
+    --blanco: rgb(255, 255, 255);
+    --fontColor: rgb(0, 255, 47);
+    
+
+
+}
+
+
+
+body{
+    font-family: var(--fuenteSecundaria);
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--grisOscuro);
+    color: var(--fontColor);
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBALES */
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4{
+    font-family: var(--fuenteSecundaria);
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 28px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+input{
+    border: none;
+}
+
+
+/* HEADER*/
+.header{
+    background-color: var(--negro);
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+}
+
+.navegacion a{
+    color: var(--blanco);
+    margin-right: 10px;
+}
+.navegacion a:last-child {
+    margin-right: 0;
+}
+
+
+
+/* MAIN */
+.main{
+    margin-top: 20px;
+}
+.grid-main{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.main--principal{
+    /* border: 1px solid black; */
+}
+
+.main--principal h1{
+    text-align: center;
+}
+.main--aside{
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
