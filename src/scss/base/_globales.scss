@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto; 
+}
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}

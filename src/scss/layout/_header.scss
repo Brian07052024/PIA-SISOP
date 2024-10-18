@@ -1,0 +1,31 @@
+@use "./base/variables" as v;
+//header
+.header{
+    background-color: v.$gris;
+    box-shadow:  v.$negro 0rem 0rem .5rem 0rem;
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: v.$blanco;
+        }
+        img{
+            width: 8rem;
+        }
+
+        ul a{
+            margin-right: 1rem;
+        }
+        ul a:last-of-type{
+            margin-right: 0;
+        }
+    }
+
+    
+}
+
+
+
