@@ -23,3 +23,8 @@
         @content;
     }
 }
+
+@mixin grid(){
+    display: grid;
+    @content;
+}
