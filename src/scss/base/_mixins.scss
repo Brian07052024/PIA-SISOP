@@ -24,7 +24,9 @@
     }
 }
 
-@mixin grid(){
+@mixin grid($columns, $rows){
     display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
     @content;
 }

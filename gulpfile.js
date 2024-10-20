@@ -3,6 +3,8 @@ import { src, dest, watch } from "gulp";
 import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 import notify from "gulp-notify";
+import cache from "gulp-cache"; 
+import imagemin from "gulp-imagemin";
 
 // Configuración de Sass
 const sass = gulpSass(dartSass); // A la función de gulpSass le pasamos todas las de dartSass como parámetro
@@ -24,8 +26,9 @@ export function javaScript() {
 
 // Tarea para copiar imágenes
 export function images() {
-    return src("src/img/**/*") // Asegúrate de que la ruta de origen sea correcta
-        .pipe(dest("build/img")) // Asegúrate de que la carpeta de destino sea 'img'
+    return src("src/img/**/*.{jpg,png,gif,svg}") // Asegúrate de que se capturan todos los formatos
+        .pipe(cache(imagemin({ optimizationLevel: 3 }))) // Optimiza las imágenes
+        .pipe(dest("build/img")) // Copia las imágenes a la carpeta de destino
         .pipe(notify('Imagen cargada')); // Notificación opcional al cargar imágenes
 }
 

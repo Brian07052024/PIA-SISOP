@@ -1,0 +1,18 @@
+@use "./base/mixins" as m;
+
+.menu{
+    visibility: visible;
+    filter: invert(1);
+    @include m.tablet{
+        visibility: hidden;
+    }
+}
+
+.mostrar{
+    visibility: visible;
+    opacity: 1; /* Aumentar opacidad al mostrar */
+    transition: opacity 0.5s ease; /* Transición para opacidad */
+}
+
+
+

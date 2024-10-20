@@ -13,8 +13,10 @@ html {
 }
 
 body{
-    background-color: v.$grisClaro;
+    // background-color: v.$grisClaro;
+    position: relative;
     font-family: v.$fuentePrincipal;
+    position: relative;
     font-size: 1.6rem;
     font-optical-sizing: auto;
     font-style: normal;
@@ -23,12 +25,15 @@ body{
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
 }
 
 h1 {
     font-size: 3.8rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2rem;
 }
 h2 {
     font-size: 3.4rem;
@@ -48,5 +53,15 @@ ul, li, a{
 .contenedor{
     width: 95%;
     max-width: 120rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+.shadow{
+    box-shadow:  v.$shadow 0rem 0rem 1rem 0rem;
+}
+
+.hover{
+    &:hover{
+        transition: transform .3s ease;
+        transform: scale(1.01);
+    }
 }

@@ -1,0 +1,27 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.toggle-bg{
+    background-color: v.$azulClaro;
+}
+
+.ventajas{
+   line-height: 1.5;
+   border-radius: 2rem;
+   margin-top: 4rem;
+
+   .ventajas-listado{
+    li{
+        margin-bottom: 2rem;
+    }
+    ul{
+        padding: 0;
+    }
+    strong{
+        color: v.$azul;
+    }
+   }
+    h1{
+        
+    }
+}

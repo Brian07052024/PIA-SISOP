@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival</title>
+    <title>Linux</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,53 +13,188 @@
 
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header-content contenedor">
-            <a class="logo"><img src="build/img/logo.svg" alt="logo"></a>
             
-            <nav">
+            <a class="logo">
+                <img src="build/img/linux_logo.svg" alt="logo">
+                <h1 class="gradientLogo">Linux</h1>
+            </a>
+            
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="enlaces">
+                    <a href="">Historia</a>
+                    <a href="">Distribuciones</a>
+                    <a href="">CLI</a>
+                    <a href="">Actualidad</a>
+                    <a href="">Software</a>
+                    <div class="toggleMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                        </svg>
+                    </div>
+                </ul>
+            </nav>
+        </div><!--header content -->
+        <h1 class="header-bottom contenedor">Producto Integrador de aprendizaje: Linux</h1>
+    </header>
+
+    <section class="toggle-bg">
+        <div class="contenedor bento-section">
+            <h1>Sumérgete en Linux</h1>
+            <div class="bento-grid ">
+            
+
+                <div class="bento-card shadow hover">
+                    <p>Descubre Linux</p>
+                </div>
+        
+                <div class="bento-card shadow hover">
+                    <p>Explora</p>
+        
+                </div>
+        
+                <div class="bento-card shadow hover">
+                    <p>Crea lo que pienses</p>
+        
+                </div>
+        
+                <div class="bento-card shadow hover">
+                    <p>Prueba sus funciones</p>
+                </div>
+        
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <main class="contenedor">
+        <section class="introduction">
+            <h1>¿Qué es linux?</h1>
+            <p>
+                Linux es un sistema operativo de código abierto, lo que significa que su código fuente está disponible para que cualquier persona lo estudie, modifique y distribuya libremente. Fue desarrollado por Linus Torvalds en 1991 y ha crecido gracias a una comunidad global de desarrolladores que contribuyen a mejorar su funcionalidad y seguridad. Basado en el diseño de Unix, Linux está diseñado para ser estable, seguro y eficiente en el manejo de recursos del sistema.
+            </p>
+            <img src="../src/img/codigoAbierto.jpg" alt="">
+        </section>
+    </main>
+
+    <section class="toggle-bg">
+        <div class="section-cards contenedor">
+            <h1>Características principales</h1>
+            <div class="cards">
+                <div class="card shadow hover">
+                    <div class="card-info">
+                        <h3>Open source</h3>
+                        <p> El código fuente de Linux está disponible para que cualquiera lo estudie, modifique y distribuya. Esto fomenta la colaboración y permite que los usuarios personalicen el sistema según sus necesidades. Además, garantiza una mayor transparencia y seguridad, ya que los problemas pueden ser detectados y solucionados rápidamente por la comunidad.</p>
+                    </div>
+                    
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                            <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                            <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="card shadow hover">
+                    <div class="card-info">
+                        <h3>Estabilidad y Seguridad</h3>
+                        <p>Linux es conocido por su robustez y estabilidad, especialmente en entornos de servidores. Puede funcionar durante largos periodos sin necesidad de reiniciarse, lo que lo hace ideal para servidores y aplicaciones críticas. Además, su diseño de permisos y gestión de usuarios ofrece una seguridad avanzada, reduciendo la vulnerabilidad frente a virus y malware.</p>
+                    </div>
+                    
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="card shadow hover">
+                    <div class="card-info">
+                        <h3>Personalización</h3>
+                        <p>Linux se puede instalar en una amplia variedad de dispositivos, desde computadoras personales y servidores hasta teléfonos móviles y dispositivos embebidos. Su arquitectura modular permite a los usuarios elegir e instalar solo los componentes que necesitan, haciendo que el sistema sea más ligero y eficiente.</p>
+                    </div>
+                    
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                        </svg>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <div class="ventajas contenedor">
+            <h1>Ventajas de usar linux</h1>
+            <div class="ventajas-listado">
                 <ul>
-                    <a href="">Pagina 1</a>
-                    <a href="">Pagina 2</a>
-                    <a href="">Pagina 3</a>
-                    <a href="">Pagina 4</a>
+                    <li>
+                        <strong>Costo:</strong> La mayoría de las distribuciones de Linux son gratuitas, a diferencia de otros sistemas operativos que requieren licencias pagadas. Además, al ser de código abierto, puedes modificar y personalizar Linux sin costo adicional.
+                    </li>
+                    <li>
+                        <strong>Personalización:</strong> Puedes cambiar prácticamente cualquier aspecto del sistema, desde la interfaz de usuario hasta el núcleo del sistema. Existen varios entornos de escritorio como GNOME, KDE, XFCE, entre otros, que se pueden adaptar a tus preferencias.
+                    </li>
+                    <li>
+                        <strong>Rendimiento:</strong> Linux es conocido por ser más ligero y eficiente que otros sistemas operativos, lo que significa que puede funcionar bien incluso en hardware más antiguo o con recursos limitados. Además, te permite controlar todos los aspectos del sistema para optimizar el rendimiento.
+                    </li>
+                    <li>
+                        <strong>Fiabilidad:</strong> Linux es ideal para servidores debido a su estabilidad. No requiere reinicios frecuentes para actualizar o mantener el sistema, lo que asegura un mayor tiempo de actividad.
+                    </li>
+                    <li>
+                        <strong>Flexibilidad:</strong> Linux se puede usar en una variedad de dispositivos, desde supercomputadoras hasta teléfonos, dispositivos IoT y sistemas embebidos. Puedes elegir entre una gran variedad de distribuciones (distros) que se adaptan a diferentes necesidades.
+                    </li>
+                    <li>
+                        <strong>Comunidad y Soporte:</strong> Linux cuenta con una comunidad activa que proporciona soporte y ayuda a resolver problemas. Existen muchos recursos en línea como foros, tutoriales y documentación oficial que facilitan el aprendizaje y la solución de problemas.
+                    </li>
+                    <li>
+                        <strong>Actualizaciones y Mantenimiento:</strong> Con Linux, tienes control sobre cuándo y cómo aplicar actualizaciones, lo que te da más libertad para gestionar tu sistema sin interrupciones inesperadas.
+                    </li>
+                    <li>
+                        <strong>Privacidad:</strong> A diferencia de otros sistemas operativos comerciales, Linux no recopila datos personales por defecto. Al ser de código abierto, cualquier persona puede revisar el código para asegurarse de que no haya prácticas invasivas de recopilación de datos.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <a href="#header">
+        <div class="up-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg>
+        </div>
+    </a>
+    <footer class="footer">
+        <div class="footer-content contenedor">
+            <p>
+                Equipo 3 todos los derechos reservados 2024
+            </p>
+            <nav">
+                <ul class="enlaces">
+                    <a href="">Historia</a>
+                    <a href="">Distribuciones</a>
+                    <a href="">CLI</a>
+                    <a href="">Actualidad</a>
+                    <a href="">Software</a>
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <main class="main contenedor">
-        <h1>Linux el Sistema operativo mas libre</h1>
-
-        <section class="contenido-principal">
-
-            <p class="informacion">
-                Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Dignissimos inventore facere ducimus totam
-                eius esse dolorem perspiciatis rem, quaerat facilis illo
-                pariatur porro natus fugiat omnis nulla praesentium
-                at officia.
-
-                Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Dignissimos inventore facere ducimus totam
-                eius esse dolorem perspiciatis rem, quaerat facilis illo
-                pariatur porro natus fugiat omnis nulla praesentium
-                at officia.
-            </p>
-            
-            <aside class="sidebar">
-                <li class="sidebar-links">
-                    <a href="">Conoce mas</a>
-                    <a href="">unix</a>
-                </li>
-            </aside>
         
-        </section>
-
-    </main>
-
-    <footer>
-
     </footer>
+    <script src="build/js/app.js"></script>
 </body>
 </html>
