@@ -3,10 +3,7 @@
 
 
 .bento-section{
-    padding: 4rem 0;
-    h1{
-        
-    }
+    padding: 8rem 0;
 }
 .bento-grid {
     @include m.grid(1fr, repeat(4, 1fr)) {

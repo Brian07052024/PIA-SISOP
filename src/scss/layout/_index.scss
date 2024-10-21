@@ -1,9 +1,13 @@
+@forward 'darkMode';
 @forward 'header';
 @forward 'menu';
-@forward 'main';
-@forward 'darkMode';
+@forward 'upBtn';
+
+// UI/IX
+@forward 'bento';
+@forward 'intro';
 @forward 'section-cards';
 @forward 'ventajas';
-@forward 'bento';
+@forward 'cli';
 @forward 'footer';
-@forward 'upBtn';
+

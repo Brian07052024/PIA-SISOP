@@ -22,6 +22,18 @@
         z-index: 1;
     }
 }
+.headerTwo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: v.$negro;
+    .logo{
+        h1{
+            padding-bottom: 0;
+        }
+    }
+}
 .header-content{
     position: relative;
     display: flex;
@@ -38,13 +50,14 @@
     
 }
 .enlaces{
-    opacity: 0; /* Agregar opacidad inicial */
+    opacity: 0;
     transition: visibility 0s linear 0.5s, opacity 0.5s ease;
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    height: 0.1rem;
     a{
         list-style: none;
         text-decoration: none;
@@ -65,6 +78,7 @@
 .logo{
     display: flex;
     gap: 1rem;
+    cursor: pointer;
     .gradientLogo{
         background-image: v.$gradienteLogo;
         -webkit-background-clip: text;
