@@ -27,6 +27,8 @@ body{
 p {
     font-size: 1.8rem;
     line-height: 1.5;
+    text-align: justify;
+    margin: 1.2rem;
 }
 
 h1 {
@@ -50,6 +52,16 @@ ul, li, a{
     list-style: none;
 }
 
+strong{
+    color: v.$naranja;
+    font-weight: bold;
+    
+}
+
+img{
+    width: 100%;
+}
+
 .contenedor{
     width: 95%;
     max-width: 120rem;
@@ -64,4 +76,8 @@ ul, li, a{
         transition: transform .3s ease;
         transform: scale(1.01);
     }
+}
+
+.hidden{
+    opacity: 0;
 }

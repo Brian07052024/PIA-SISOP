@@ -47,7 +47,6 @@
     .linux-var{
         color: v.$verde;
     }
-    
     .window-cli_options{
         display: flex;
         a{
@@ -55,17 +54,14 @@
             margin-right: 1rem;
         }
     }
+    .bienvenida-cli{
+        color: v.$verde;
+        height: 5rem;
+    }
 }
 
 .bloqueComandos{
     margin-bottom: 3rem;
-    &:last-of-type{
-        margin-bottom: 0;
-    }
-}
-
-.box-comand{
-    margin-bottom: 8rem;
     &:last-of-type{
         margin-bottom: 0;
     }
@@ -77,3 +73,16 @@
         padding-bottom: 8rem;
     }
 }
+
+.box-comand{
+    margin-bottom: 8rem;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    
+}
+
+
+
+
+

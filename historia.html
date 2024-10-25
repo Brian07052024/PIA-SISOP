@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+<body>
+    <header id="header" class="header inicio-cli">
+        <div class="header-content contenedor">
+            
+            <a href="index.html" class="logo">
+                <img src="build/img/linux_logo.svg" alt="logo" loading="lazy">
+                <h2 class="gradientLogo">Linux</h2>
+            </a>
+            
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="enlaces">
+                    <a href="historia.html">Historia</a>
+                    <a href="distribuciones.html">Distribuciones</a>
+                    <a href="cli.html">CLI</a>
+                    <a href="actualidad.html">Actualidad</a>
+                    <a href="software.html">Software</a>
+                    <div class="toggleMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                        </svg>
+                    </div>
+                </ul>
+            </nav>
+        </div><!--header content -->
+    </header>
+
+    <main class="historia-origen">
+        <div class="contenedor">
+            <h1>Linux: historia y origen</h1>
+            <div class="historia-intro">
+                <div>
+                    <p>
+                        La historia de Linux es una fascinante travesía que comenzó como el proyecto personal de un joven programador y se convirtió en un fenómeno global de código abierto. 
+                    </p>
+                    <p>
+                        Desde sus humildes inicios en la década de 1990, ha evolucionado para convertirse en uno de los sistemas operativos más importantes y versátiles del mundo. A través de la colaboración de miles de desarrolladores y empresas, Linux ha cambiado la forma en que se desarrollan y distribuyen los sistemas operativos, estableciendo nuevos estándares de innovación y cooperación en la industria tecnológica.
+                    </p>
+                    <p>
+                        A continuación, se presenta un recorrido por los hitos más importantes en la historia de Linux, desde su creación hasta su influencia actual.
+                    </p>
+                </div>
+                <div class="linus contenedor shadow">
+                    <div class="linus-content">
+                        <h4>Torvalds Linus</h4>
+                        <img src="src/img/linusTrovalds.jpg" alt="Creador de linux" loading="lazy">
+                        <p>Informacion Personal</p>
+                        <p><strong>Nombre: </strong>Torvalds Benedict Linus</p>
+                        <p><strong>Nacimiento: </strong>28 de diciembre de 1969 (54 años)</p>
+                        <p><strong>Nacionalidad: </strong>Finés Estadounidense</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="toggle-bg section-timeLine">
+        <div>
+            <div class="contenedor">
+                <h1>Linux: Linea Del Tiempo</h1>
+            </div>
+            <div class="contenedor timeLine">
+                <div class="timeLine-block">
+                    <h2>1991</h2>
+                    <p>
+                        Linus Torvalds, un estudiante finlandés, comienza a desarrollar un sistema operativo basado en Minix, como un proyecto personal. El 25 de agosto, anuncia su trabajo en un foro, afirmando que es "solo un hobby, no será grande y profesional como GNU". En septiembre, lanza la versión 0.01 de Linux, marcando el inicio de su evolución.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>1992</h2>
+                    <p>
+                        Linux cambia su licencia a la Licencia Pública General (GPL), permitiendo que el sistema sea libre y de código abierto. Esto impulsa el desarrollo colaborativo y la adopción del software por parte de la comunidad.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>1993</h2>
+                    <p>
+                        Aparecen las primeras distribuciones de Linux, como Slackware y Debian, que combinan el núcleo Linux con otros programas para formar sistemas operativos completos. Esto facilita la instalación y el uso de Linux, atrayendo a más usuarios.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>1994</h2>
+                    <p>
+                        Se lanza la versión 1.0.0 de Linux, la primera versión estable, con 176,250 líneas de código. Esta versión es compatible con sistemas Intel i386 de un solo procesador. También surgen nuevas distribuciones como Red Hat Linux y SUSE Linux.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>1996</h2>
+                    <p>
+                        Se introduce a Tux, el pingüino, como la mascota oficial de Linux. También se lanza Linux 2.0, que introduce soporte para sistemas multiprocesador (SMP) y mejora la compatibilidad de hardware.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>1998-2000</h2>
+                    <p>
+                        Las empresas tecnológicas comienzan a apoyar Linux. IBM invierte mil millones de dólares en su desarrollo, mientras que Dell preinstala Linux en algunos servidores. Los entornos de escritorio GNOME y KDE se desarrollan, haciendo Linux más accesible para usuarios generales.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>2003</h2>
+                    <p>
+                        El Grupo SCO presenta una demanda contra IBM, alegando que Linux contiene código de Unix protegido por derechos de autor. Aunque la demanda fracasa, subraya la importancia de la propiedad intelectual en el software libre.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>2004</h2>
+                    <p>
+                        Canonical lanza Ubuntu 4.10, centrado en la facilidad de uso y accesibilidad, impulsando la adopción de Linux en ordenadores de escritorio y portátiles.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>2005</h2>
+                    <p>
+                        Linus Torvalds desarrolla Git, un sistema de control de versiones que revoluciona la colaboración en el desarrollo de software. Git se convierte en una herramienta esencial para la comunidad de código abierto.
+                    </p>
+                </div>
+                <div class="timeLine-block">
+                    <h2>2011-Actualidad</h2>
+                    <p>
+                        Linux sigue creciendo y adaptándose a nuevas tecnologías. Se convierte en la base para Android, el sistema operativo móvil más popular, y es ampliamente utilizado en servidores, supercomputadoras y sistemas integrados.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        
+    </section>
+    
+
+    
+   
+    <footer class="footer">
+        <div class="footer-content contenedor">
+            <p>
+                Equipo 3 todos los derechos reservados 2024
+            </p>
+            
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>

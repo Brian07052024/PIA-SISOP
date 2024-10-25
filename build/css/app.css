@@ -333,6 +333,8 @@ body {
 p {
   font-size: 1.8rem;
   line-height: 1.5;
+  text-align: justify;
+  margin: 1.2rem;
 }
 
 h1 {
@@ -359,6 +361,15 @@ ul, li, a {
   list-style: none;
 }
 
+strong {
+  color: rgb(255, 153, 0);
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
 .contenedor {
   width: 95%;
   max-width: 120rem;
@@ -366,12 +377,16 @@ ul, li, a {
 }
 
 .shadow {
-  box-shadow: rgb(179, 179, 179) 0rem 0rem 1rem 0rem;
+  box-shadow: rgb(189, 189, 189) 0rem 0rem 1rem 0rem;
 }
 
 .hover:hover {
   transition: transform 0.3s ease;
   transform: scale(1.01);
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .toggleMode {
@@ -389,14 +404,14 @@ ul, li, a {
 }
 
 .darkMode .toggle-bg {
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(20, 20, 20);
 }
 
 .darkMode .toggleMode {
   filter: invert(0.25);
 }
 
-.darkMode main p, .darkMode main h1, .darkMode main h2, .darkMode main h3, .darkMode main h4, .darkMode section p, .darkMode section h1, .darkMode section h2, .darkMode section h3, .darkMode section h4 {
+.darkMode p, .darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4 {
   color: rgb(255, 255, 255);
 }
 
@@ -408,17 +423,8 @@ ul, li, a {
   background-color: rgb(35, 35, 35);
 }
 
-.darkMode .header {
-  background-image: url(../../src/img/headerBackDarkMode.jpg);
-}
-
-.darkMode .logo .gradientLogo {
-  background-image: linear-gradient(0deg, rgb(34, 90, 195) 0%, rgb(45, 132, 253) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.darkMode .logo img {
+.darkMode .header,
+.darkMode .headerTwo {
   filter: hue-rotate(180deg);
 }
 
@@ -427,7 +433,17 @@ ul, li, a {
 }
 
 .darkMode .shadow {
-  box-shadow: rgb(14, 14, 14) 0rem 0rem 1rem 0rem;
+  box-shadow: rgb(10, 10, 10) 0rem 0rem 1rem 0rem;
+}
+
+.darkMode strong {
+  color: rgb(34, 255, 0);
+  font-weight: bold;
+}
+
+.darkMode strong::before {
+  content: "-";
+  color: rgb(34, 255, 0);
 }
 
 .header {
@@ -458,7 +474,7 @@ ul, li, a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(10, 10, 10);
 }
 
 .headerTwo .logo h1 {
@@ -530,6 +546,7 @@ ul, li, a {
   color: rgb(255, 255, 255);
   z-index: 2;
   margin-bottom: 10rem;
+  display: inline-block;
 }
 
 .fixed {
@@ -556,20 +573,17 @@ ul, li, a {
   height: auto;
 }
 
-.up-btn {
-  position: fixed;
-  right: 4rem;
-  bottom: 10rem;
-}
-
-.ocultarBtn {
-  visibility: hidden;
-}
-
 .bento-section {
   padding: 8rem 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
+@media (min-width: 768px) {
+  .bento-section {
+    opacity: 0;
+  }
+}
 .bento-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -600,6 +614,7 @@ ul, li, a {
   z-index: 4;
   left: 2rem;
   top: 0;
+  text-align: left;
 }
 
 .bento-grid .bento-card:nth-child(1) {
@@ -632,7 +647,7 @@ ul, li, a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(0, 106, 177);
+  color: rgb(22, 138, 215);
 }
 
 @media (min-width: 768px) {
@@ -693,6 +708,7 @@ ul, li, a {
   padding: 0 2rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 
 .cards .card p {
@@ -752,10 +768,6 @@ ul, li, a {
   padding: 0;
 }
 
-.ventajas .ventajas-listado strong {
-  color: rgb(0, 106, 177);
-}
-
 .tittle {
   padding-top: 8rem;
 }
@@ -781,7 +793,7 @@ ul, li, a {
   }
 }
 .window-cli {
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(10, 10, 10);
   border-radius: 1rem;
   padding-bottom: 4rem;
 }
@@ -819,19 +831,16 @@ ul, li, a {
   margin-right: 1rem;
 }
 
+.window-cli .bienvenida-cli {
+  color: rgb(34, 255, 0);
+  height: 5rem;
+}
+
 .bloqueComandos {
   margin-bottom: 3rem;
 }
 
 .bloqueComandos:last-of-type {
-  margin-bottom: 0;
-}
-
-.box-comand {
-  margin-bottom: 8rem;
-}
-
-.box-comand:last-of-type {
   margin-bottom: 0;
 }
 
@@ -843,8 +852,141 @@ ul, li, a {
   padding-bottom: 8rem;
 }
 
+.box-comand {
+  margin-bottom: 8rem;
+}
+
+.box-comand:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-timeLine {
+  padding: 8rem 0;
+}
+
+.historia-origen {
+  padding: 8rem 0rem;
+}
+
+.historia-origen .historia-intro {
+  align-items: center;
+}
+
+.historia-origen .historia-intro p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .historia-origen .historia-intro {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+}
+.linus {
+  border: 0.1rem solid rgb(125, 169, 173);
+  display: flex;
+  flex-direction: column;
+  background-color: #bfd2dc;
+}
+
+.linus .linus-content {
+  margin: 1rem 0.25rem;
+}
+
+.linus .linus-content h4 {
+  background-color: rgb(125, 169, 173);
+  margin: 0 0 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+.linus .linus-content p {
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.linus .linus-content p:nth-of-type(1) {
+  background-color: rgb(125, 169, 173);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.linus .linus-content strong {
+  color: rgb(10, 10, 10);
+}
+
+.timeLine {
+  display: flex;
+  transform: translateX(-5rem);
+  opacity: 0;
+  flex-direction: column;
+  border-left: 1rem solid rgb(22, 138, 215);
+  padding: 2rem;
+  transition: all 0.6s ease;
+}
+
+.timeLine-block {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 2rem;
+  box-shadow: rgb(189, 189, 189) 0 0 1rem 0;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.timeLine-block h2 {
+  margin: 0;
+}
+
+.timeLine-block h2::after {
+  content: " ";
+  display: block;
+  width: 9rem;
+  height: 0.5rem;
+  background-color: rgb(22, 138, 215);
+}
+
+.timeLine-block p {
+  margin: 0;
+}
+
+.timeLine-block::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: rgb(22, 138, 215);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50rem;
+  left: -3.9rem;
+  top: 7rem;
+}
+
+@media (min-width: 768px) {
+  .timeLine-block::before {
+    width: 4rem;
+    height: 4rem;
+    left: -4.5rem;
+  }
+}
+.in-view {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .footer {
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(10, 10, 10);
   padding: 2rem 0;
 }
 
@@ -866,4 +1008,133 @@ ul, li, a {
 .footer-content .enlaces {
   visibility: visible;
   opacity: 1;
+}
+
+.bentoAnimation {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .bentoAnimation .bento-grid .bento-card:nth-child(1) {
+    animation: card1 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(2) {
+    animation: card2 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(3) {
+    animation: card3 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(4) {
+    animation: card4 1s ease-in;
+  }
+}
+@keyframes card1 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card2 {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card3 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card4 {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.blinking::after {
+  content: "|";
+  color: rgb(255, 255, 255);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+.bentoAnimation {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .bentoAnimation .bento-grid .bento-card:nth-child(1) {
+    animation: card1 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(2) {
+    animation: card2 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(3) {
+    animation: card3 1s ease-in;
+  }
+  .bentoAnimation .bento-grid .bento-card:nth-child(4) {
+    animation: card4 1s ease-in;
+  }
+}
+
+@keyframes card1 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card2 {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card3 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes card4 {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.blinking::after {
+  content: "|";
+  color: rgb(255, 255, 255);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
 }

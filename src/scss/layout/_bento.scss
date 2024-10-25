@@ -4,6 +4,11 @@
 
 .bento-section{
     padding: 8rem 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    @include m.tablet{
+        opacity: 0;
+    }
 }
 .bento-grid {
     @include m.grid(1fr, repeat(4, 1fr)) {
@@ -32,6 +37,7 @@
             z-index: 4; 
             left: 2rem;
             top: 0;
+            text-align: left;
         }
 
         &:nth-child(1) {
@@ -93,3 +99,4 @@
     }
     
 }
+

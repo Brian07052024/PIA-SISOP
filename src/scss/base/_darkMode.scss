@@ -12,17 +12,17 @@
 .darkMode{
     background-color: v.$gris;
     .toggle-bg{
-        background-color: v.$negro;
+        background-color: v.$negroClaro;
 
     }
     .toggleMode{
         filter: invert(0.25);
     }
-    main, section{
-        p, h1, h2, h3, h4{
-            color: v.$blanco;
-        }
+   
+    p, h1, h2, h3, h4{
+        color: v.$blanco;
     }
+    
     .card{
         background-color: v.$blanco;
     }
@@ -32,20 +32,11 @@
             background-color: v.$gris;
         }
     }
-    .header{
-        background-image: url(../../src/img/headerBackDarkMode.jpg);
+    .header,
+    .headerTwo{
+        filter: hue-rotate(180deg);
     }
-    .logo{
-        .gradientLogo{
-            background-image: v.$gradienteLogoDarkMode;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        img{
-            filter:hue-rotate(180deg);
-        }
     
-    }
     .ventajas{
         li{
             color: v.$blanco;
@@ -54,5 +45,15 @@
 
     .shadow{
         box-shadow:  v.$negro 0rem 0rem 1rem 0rem;
+    }
+
+    strong{
+        color: v.$verde;
+        font-weight: bold;
+        &::before{
+            content: "-";
+            color: v.$verde;
+    
+        }
     }
 }
