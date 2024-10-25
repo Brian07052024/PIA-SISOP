@@ -362,7 +362,7 @@ ul, li, a {
 }
 
 strong {
-  color: rgb(255, 153, 0);
+  color: rgb(0, 50, 84);
   font-weight: bold;
 }
 
@@ -387,63 +387,6 @@ img {
 
 .hidden {
   opacity: 0;
-}
-
-.toggleMode {
-  cursor: pointer;
-  filter: invert(1);
-}
-
-.toggleMode:hover {
-  transition: 0.2s ease-in;
-  transform: scale(1.08);
-}
-
-.darkMode {
-  background-color: rgb(35, 35, 35);
-}
-
-.darkMode .toggle-bg {
-  background-color: rgb(20, 20, 20);
-}
-
-.darkMode .toggleMode {
-  filter: invert(0.25);
-}
-
-.darkMode p, .darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4 {
-  color: rgb(255, 255, 255);
-}
-
-.darkMode .card {
-  background-color: rgb(255, 255, 255);
-}
-
-.darkMode .cards .card {
-  background-color: rgb(35, 35, 35);
-}
-
-.darkMode .header,
-.darkMode .headerTwo {
-  filter: hue-rotate(180deg);
-}
-
-.darkMode .ventajas li {
-  color: rgb(255, 255, 255);
-}
-
-.darkMode .shadow {
-  box-shadow: rgb(10, 10, 10) 0rem 0rem 1rem 0rem;
-}
-
-.darkMode strong {
-  color: rgb(34, 255, 0);
-  font-weight: bold;
-}
-
-.darkMode strong::before {
-  content: "-";
-  color: rgb(34, 255, 0);
 }
 
 .header {
@@ -530,14 +473,15 @@ img {
   }
 }
 .logo {
+  filter: hue-rotate(170deg);
   display: flex;
   gap: 1rem;
   cursor: pointer;
 }
 
 .logo .gradientLogo {
-  background-image: linear-gradient(0deg, rgb(195, 104, 34) 0%, rgb(253, 135, 45) 100%);
-  -webkit-background-clip: text;
+  background-image: linear-gradient(0deg, rgb(242, 107, 3) 0%, rgb(136, 59, 0) 100%);
+  background-clip: text;
   color: transparent;
 }
 
@@ -582,6 +526,7 @@ img {
 @media (min-width: 768px) {
   .bento-section {
     opacity: 0;
+    transition: all 0.6s ease;
   }
 }
 .bento-grid {
@@ -680,7 +625,7 @@ img {
 }
 
 .introduction p {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   line-height: 1.5;
 }
 
@@ -776,12 +721,20 @@ img {
   text-align: center;
 }
 
+.introduccion-cli p {
+  margin: 0;
+}
+
 .cli-intro {
   padding-bottom: 8rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 2rem;
+}
+
+.cli-intro p {
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -792,6 +745,47 @@ img {
     gap: 2rem;
   }
 }
+.bloqueComandos {
+  margin-bottom: 3rem;
+}
+
+.bloqueComandos:last-of-type {
+  margin-bottom: 0;
+}
+
+.comand-boxes {
+  padding-top: 8rem;
+}
+
+.comand-boxes p {
+  margin: 0;
+  text-align: justify;
+}
+
+.comand-boxes:last-of-type {
+  padding-bottom: 8rem;
+}
+
+.box-comand {
+  margin-bottom: 8rem;
+}
+
+.box-comand strong {
+  color: rgb(0, 50, 84);
+}
+
+.box-comand p {
+  text-align: left;
+}
+
+.box-comand:last-of-type {
+  margin-bottom: 0;
+}
+
+.box-comand_text {
+  margin-bottom: 4rem;
+}
+
 .window-cli {
   background-color: rgb(10, 10, 10);
   border-radius: 1rem;
@@ -834,30 +828,6 @@ img {
 .window-cli .bienvenida-cli {
   color: rgb(34, 255, 0);
   height: 5rem;
-}
-
-.bloqueComandos {
-  margin-bottom: 3rem;
-}
-
-.bloqueComandos:last-of-type {
-  margin-bottom: 0;
-}
-
-.comand-boxes {
-  padding-top: 8rem;
-}
-
-.comand-boxes:last-of-type {
-  padding-bottom: 8rem;
-}
-
-.box-comand {
-  margin-bottom: 8rem;
-}
-
-.box-comand:last-of-type {
-  margin-bottom: 0;
 }
 
 .section-timeLine {
@@ -1016,21 +986,21 @@ img {
 
 @media (min-width: 768px) {
   .bentoAnimation .bento-grid .bento-card:nth-child(1) {
-    animation: card1 1s ease-in;
+    animation: card1 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(2) {
-    animation: card2 1s ease-in;
+    animation: card2 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(3) {
-    animation: card3 1s ease-in;
+    animation: card3 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(4) {
-    animation: card4 1s ease-in;
+    animation: card4 1s ease;
   }
 }
 @keyframes card1 {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-5rem);
   }
   to {
     transform: translateX(0);
@@ -1038,7 +1008,7 @@ img {
 }
 @keyframes card2 {
   from {
-    transform: translateX(200%);
+    transform: translateX(5rem);
   }
   to {
     transform: translateX(0);
@@ -1046,7 +1016,7 @@ img {
 }
 @keyframes card3 {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-5rem);
   }
   to {
     transform: translateX(0);
@@ -1054,7 +1024,7 @@ img {
 }
 @keyframes card4 {
   from {
-    transform: translateY(200%);
+    transform: translateY(5rem);
   }
   to {
     transform: translateX(0);
@@ -1074,27 +1044,79 @@ img {
     opacity: 0;
   }
 }
+.toggleMode {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.toggleMode:hover {
+  transition: 0.2s ease-in;
+  transform: scale(1.08);
+}
+
+.darkMode {
+  background-color: rgb(35, 35, 35);
+}
+
+.darkMode .toggle-bg {
+  background-color: rgb(20, 20, 20);
+}
+
+.darkMode .toggleMode {
+  filter: invert(0.25);
+}
+
+.darkMode p, .darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4 {
+  color: rgb(255, 255, 255);
+}
+
+.darkMode .card {
+  background-color: rgb(255, 255, 255);
+}
+
+.darkMode .cards .card {
+  background-color: rgb(35, 35, 35);
+}
+
+.darkMode .header,
+.darkMode .headerTwo {
+  filter: hue-rotate(250deg);
+}
+
+.darkMode .ventajas li {
+  color: rgb(255, 255, 255);
+}
+
+.darkMode .shadow {
+  box-shadow: rgb(10, 10, 10) 0rem 0rem 1rem 0rem;
+}
+
+.darkMode strong {
+  color: rgb(34, 255, 0);
+  font-weight: bold;
+}
+
 .bentoAnimation {
   opacity: 1;
 }
 @media (min-width: 768px) {
   .bentoAnimation .bento-grid .bento-card:nth-child(1) {
-    animation: card1 1s ease-in;
+    animation: card1 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(2) {
-    animation: card2 1s ease-in;
+    animation: card2 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(3) {
-    animation: card3 1s ease-in;
+    animation: card3 1s ease;
   }
   .bentoAnimation .bento-grid .bento-card:nth-child(4) {
-    animation: card4 1s ease-in;
+    animation: card4 1s ease;
   }
 }
 
 @keyframes card1 {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-5rem);
   }
   to {
     transform: translateX(0);
@@ -1102,7 +1124,7 @@ img {
 }
 @keyframes card2 {
   from {
-    transform: translateX(200%);
+    transform: translateX(5rem);
   }
   to {
     transform: translateX(0);
@@ -1110,7 +1132,7 @@ img {
 }
 @keyframes card3 {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-5rem);
   }
   to {
     transform: translateX(0);
@@ -1118,7 +1140,7 @@ img {
 }
 @keyframes card4 {
   from {
-    transform: translateY(200%);
+    transform: translateY(5rem);
   }
   to {
     transform: translateX(0);

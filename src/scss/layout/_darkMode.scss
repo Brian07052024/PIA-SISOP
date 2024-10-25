@@ -1,0 +1,54 @@
+@use "../base/variables" as v;
+
+.toggleMode{
+    cursor: pointer;
+    filter: invert(1);
+    &:hover{
+        transition: 0.2s ease-in;
+        transform: scale(1.08);
+    }
+}
+
+.darkMode{
+    background-color: v.$gris;
+    .toggle-bg{
+        background-color: v.$negroClaro;
+
+    }
+    .toggleMode{
+        filter: invert(0.25);
+    }
+   
+    p, h1, h2, h3, h4{
+        color: v.$blanco;
+    }
+    
+    .card{
+        background-color: v.$blanco;
+    }
+
+    .cards{
+        .card{
+            background-color: v.$gris;
+        }
+    }
+    .header,
+    .headerTwo{
+        filter: hue-rotate(250deg);
+    }
+    
+    .ventajas{
+        li{
+            color: v.$blanco;
+        }
+    }
+
+    .shadow{
+        box-shadow:  v.$negro 0rem 0rem 1rem 0rem;
+    }
+
+    strong{
+        color: v.$verde;
+        font-weight: bold;
+    }
+}

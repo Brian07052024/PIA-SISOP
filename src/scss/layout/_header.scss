@@ -76,12 +76,13 @@
     }
 }
 .logo{
+    filter: hue-rotate(170deg);
     display: flex;
     gap: 1rem;
     cursor: pointer;
     .gradientLogo{
         background-image: v.$gradienteLogo;
-        -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
     }
 

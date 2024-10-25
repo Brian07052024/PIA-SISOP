@@ -8,9 +8,16 @@
         text-align: center;
     }
 }
+.introduccion-cli{
+    p{
+        margin: 0;
+    }
+}
 .cli-intro{
-    // padding-top: 8rem;
     padding-bottom: 8rem;
+    p{
+        text-align: left;
+    }
     @include m.grid(1fr, auto){
         gap: 2rem;
     }
@@ -21,6 +28,42 @@
         }
     }
 
+}
+
+.bloqueComandos{
+    margin-bottom: 3rem;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+.comand-boxes{
+    padding-top: 8rem;
+    p{
+        margin: 0;
+        text-align: justify;
+    }
+    &:last-of-type{
+        padding-bottom: 8rem;
+    }
+}
+
+.box-comand{
+    margin-bottom: 8rem;
+    strong{
+        color: v.$azulOscuro;
+    }
+    p{
+        text-align: left;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    
+}
+
+.box-comand_text{
+    margin-bottom: 4rem;
 }
 
 .window-cli{
@@ -60,27 +103,7 @@
     }
 }
 
-.bloqueComandos{
-    margin-bottom: 3rem;
-    &:last-of-type{
-        margin-bottom: 0;
-    }
-}
 
-.comand-boxes{
-    padding-top: 8rem;
-    &:last-of-type{
-        padding-bottom: 8rem;
-    }
-}
-
-.box-comand{
-    margin-bottom: 8rem;
-    &:last-of-type{
-        margin-bottom: 0;
-    }
-    
-}
 
 
 

@@ -51,7 +51,7 @@
     <main>
         <div class="contenedor cli-intro">
             <div>
-                <div>
+                <div class="introduccion-cli">
                     <h2>¿Qué es un comando?</h2>
                     <p>
                         Un comando Linux es un programa o utilidad que se ejecuta en la línea de comandos. Una línea de comandos es una interfaz que acepta líneas de texto y las procesa en forma de instrucciones para tu ordenador.
@@ -93,15 +93,17 @@
             </div>
 
             <div class="box-comand">
-                <h2>Navegación y manejo de archivos</h2>
-                <p>A continuación se muestran algunos comandos y opciones para navegar y manejar archivos en la terminal de Linux.</p>
-                <p><strong>pwd:</strong> Muestra el directorio actual en el que estás trabajando (ruta completa).</p>
-                <p><strong>ls:</strong> Lista los archivos y carpetas del directorio actual. Con <code>-l</code>, muestra detalles adicionales como permisos, propietario, tamaño y fecha de modificación.</p>
-                <p><strong>cd:</strong> Cambia de directorio. Por ejemplo, <code>cd /home/usuario/Documentos</code> te moverá al directorio "Documentos".</p>
-                <p><strong>mkdir:</strong> Crea un nuevo directorio. Por ejemplo, <code>mkdir proyecto</code> crea una carpeta llamada "proyecto".</p>
-                <p><strong>rm:</strong> Elimina archivos. Por ejemplo, <code>rm archivo.txt</code> borra el archivo "archivo.txt".</p>
-                <p><strong>cp:</strong> Copia archivos de un lugar a otro. Por ejemplo, <code>cp archivo.txt /home/usuario/Documentos/</code> copia el archivo "archivo.txt" al directorio "Documentos".</p>
-                <p><strong>mv:</strong> Mueve o renombra archivos. Por ejemplo, <code>mv archivo.txt nuevo_archivo.txt</code> cambia el nombre de "archivo.txt" a "nuevo_archivo.txt".</p>
+                <div class="box-comand_text">
+                    <h2>Navegación y manejo de archivos</h2>
+                    <p>A continuación se muestran algunos comandos y opciones para navegar y manejar archivos en la terminal de Linux.</p>
+                    <p><strong>pwd:</strong> Muestra el directorio actual en el que estás trabajando (ruta completa).</p>
+                    <p><strong>ls:</strong> Lista los archivos y carpetas del directorio actual. Con <code>-l</code>, muestra detalles adicionales como permisos, propietario, tamaño y fecha de modificación.</p>
+                    <p><strong>cd:</strong> Cambia de directorio. Por ejemplo, <code>cd /home/usuario/Documentos</code> te moverá al directorio "Documentos".</p>
+                    <p><strong>mkdir:</strong> Crea un nuevo directorio. Por ejemplo, <code>mkdir proyecto</code> crea una carpeta llamada "proyecto".</p>
+                    <p><strong>rm:</strong> Elimina archivos. Por ejemplo, <code>rm archivo.txt</code> borra el archivo "archivo.txt".</p>
+                    <p><strong>cp:</strong> Copia archivos de un lugar a otro. Por ejemplo, <code>cp archivo.txt /home/usuario/Documentos/</code> copia el archivo "archivo.txt" al directorio "Documentos".</p>
+                    <p><strong>mv:</strong> Mueve o renombra archivos. Por ejemplo, <code>mv archivo.txt nuevo_archivo.txt</code> cambia el nombre de "archivo.txt" a "nuevo_archivo.txt".</p>
+                </div>
 
                 <div class="window-cli shadow">
                     <nav>
@@ -157,13 +159,16 @@
             </div>
 
             <div class="box-comand">
-                <h2>Visualización y edición de archivos</h2>
-                <p>A continuación se muestran algunos comandos y opciones para visualizar y editar archivos en la terminal de Linux.</p>
+                <div class="box-comand_text">
+                    <h2>Visualización y edición de archivos</h2>
+                    <p>A continuación se muestran algunos comandos y opciones para visualizar y editar archivos en la terminal de Linux.</p>
+                    
+                    <p><strong>cat:</strong> Muestra el contenido completo de un archivo directamente en la terminal. Por ejemplo, <code>cat archivo.txt</code> mostrará el texto del archivo "archivo.txt".</p>
+                    <p><strong>more:</strong> Muestra el contenido de un archivo página por página. Por ejemplo, <code>more archivo.txt</code> permite leer el archivo "archivo.txt" de manera que el contenido no se desborde en la pantalla.</p>
+                    <p><strong>less:</strong> Similar a <code>more</code>, pero permite desplazarse hacia arriba y hacia abajo en el archivo. Por ejemplo, <code>less archivo.txt</code> mostrará el contenido del archivo "archivo.txt" con más control para navegar.</p>
+                    <p><strong>nano:</strong> Abre el editor de texto nano, que permite visualizar y editar archivos en la terminal. Por ejemplo, <code>nano archivo.txt</code> abrirá el archivo "archivo.txt" en nano para su edición.</p>
+                </div>
                 
-                <p><strong>cat:</strong> Muestra el contenido completo de un archivo directamente en la terminal. Por ejemplo, <code>cat archivo.txt</code> mostrará el texto del archivo "archivo.txt".</p>
-                <p><strong>more:</strong> Muestra el contenido de un archivo página por página. Por ejemplo, <code>more archivo.txt</code> permite leer el archivo "archivo.txt" de manera que el contenido no se desborde en la pantalla.</p>
-                <p><strong>less:</strong> Similar a <code>more</code>, pero permite desplazarse hacia arriba y hacia abajo en el archivo. Por ejemplo, <code>less archivo.txt</code> mostrará el contenido del archivo "archivo.txt" con más control para navegar.</p>
-                <p><strong>nano:</strong> Abre el editor de texto nano, que permite visualizar y editar archivos en la terminal. Por ejemplo, <code>nano archivo.txt</code> abrirá el archivo "archivo.txt" en nano para su edición.</p>
 
                 <div class="window-cli shadow">
                     <nav>
@@ -201,13 +206,16 @@
             </div>
 
             <div class="box-comand">
-                <h2>Gestión de permisos y procesos</h2>
-                <p>A continuación se describen comandos básicos para manejar permisos de archivos y gestionar procesos en la terminal de Linux.</p>
+                <div class="box-comand_text">
+                    <h2>Gestión de permisos y procesos</h2>
+                    <p>A continuación se describen comandos básicos para manejar permisos de archivos y gestionar procesos en la terminal de Linux.</p>
+                    
+                    <p><strong>chmod:</strong> Cambia los permisos de un archivo. Por ejemplo, <code>chmod 755 script.sh</code> otorga permisos de lectura y ejecución a todos los usuarios, pero solo permisos de escritura al propietario del archivo.</p>
+                    <p><strong>chown:</strong> Cambia el propietario y grupo de un archivo. Por ejemplo, <code>chown usuario:grupo script.sh</code> asigna "usuario" como propietario y "grupo" como grupo del archivo "script.sh".</p>
+                    <p><strong>ps aux:</strong> Muestra una lista de todos los procesos que se están ejecutando en el sistema, junto con información como el usuario, el uso de memoria y CPU, y el comando que inició el proceso.</p>
+                    <p><strong>kill:</strong> Finaliza un proceso específico. Por ejemplo, <code>kill 1234</code> termina el proceso con el ID 1234.</p>
+                </div>
                 
-                <p><strong>chmod:</strong> Cambia los permisos de un archivo. Por ejemplo, <code>chmod 755 script.sh</code> otorga permisos de lectura y ejecución a todos los usuarios, pero solo permisos de escritura al propietario del archivo.</p>
-                <p><strong>chown:</strong> Cambia el propietario y grupo de un archivo. Por ejemplo, <code>chown usuario:grupo script.sh</code> asigna "usuario" como propietario y "grupo" como grupo del archivo "script.sh".</p>
-                <p><strong>ps aux:</strong> Muestra una lista de todos los procesos que se están ejecutando en el sistema, junto con información como el usuario, el uso de memoria y CPU, y el comando que inició el proceso.</p>
-                <p><strong>kill:</strong> Finaliza un proceso específico. Por ejemplo, <code>kill 1234</code> termina el proceso con el ID 1234.</p>
 
                 <div class="window-cli shadow">
                     <nav>
@@ -242,12 +250,15 @@
             </div>
 
             <div class="box-comand">
-                <h2>Información del sistema</h2>
-                <p>Información del sistema Comandos útiles para obtener detalles sobre el uso del sistema de archivos, la memoria y la información general del sistema operativo en Linux.</p>
+                <div class="box-comand_text">
+                    <h2>Información del sistema</h2>
+                    <p>Información del sistema Comandos útiles para obtener detalles sobre el uso del sistema de archivos, la memoria y la información general del sistema operativo en Linux.</p>
+                    
+                    <p><strong>df -h:</strong> Muestra el uso del espacio en disco de manera legible para el usuario (en GB/MB). Por ejemplo, <code>df -h</code> indica cuánto espacio total y libre hay en cada sistema de archivos.</p>
+                    <p><strong>free -h:</strong> Muestra el uso de la memoria RAM y swap en el sistema, con valores legibles para el usuario. Por ejemplo, <code>free -h</code> te permite ver cuánta memoria está en uso, libre o en caché.</p>
+                    <p><strong>uname -a:</strong> Muestra información del sistema operativo, incluyendo el nombre del kernel, la versión y la arquitectura. Por ejemplo, <code>uname -a</code> proporciona detalles completos sobre el sistema operativo en uso.</p>
+                </div>
                 
-                <p><strong>df -h:</strong> Muestra el uso del espacio en disco de manera legible para el usuario (en GB/MB). Por ejemplo, <code>df -h</code> indica cuánto espacio total y libre hay en cada sistema de archivos.</p>
-                <p><strong>free -h:</strong> Muestra el uso de la memoria RAM y swap en el sistema, con valores legibles para el usuario. Por ejemplo, <code>free -h</code> te permite ver cuánta memoria está en uso, libre o en caché.</p>
-                <p><strong>uname -a:</strong> Muestra información del sistema operativo, incluyendo el nombre del kernel, la versión y la arquitectura. Por ejemplo, <code>uname -a</code> proporciona detalles completos sobre el sistema operativo en uso.</p>
 
                 <div class="window-cli shadow">
                     <nav>
@@ -281,11 +292,14 @@
             </div>
 
             <div class="box-comand">
-                <h2>Redes</h2>
-                <p>Comandos básicos para obtener información de la red y verificar la conectividad en Linux.</p>
+                <div class="box-comand_text">
+                    <h2>Redes</h2>
+                    <p>Comandos básicos para obtener información de la red y verificar la conectividad en Linux.</p>
+                    
+                    <p><strong>ifconfig:</strong> Muestra la configuración de las interfaces de red en el sistema. Por ejemplo, <code>ifconfig</code> proporciona detalles como la dirección IP, la dirección MAC y el estado de la conexión de la red.</p>
+                    <p><strong>ping:</strong> Envía paquetes de prueba a un destino para verificar la conectividad de la red. Por ejemplo, <code>ping google.com</code> envía paquetes a "google.com" y muestra si hay respuesta, indicando que la conexión a internet funciona.</p>
+                </div>
                 
-                <p><strong>ifconfig:</strong> Muestra la configuración de las interfaces de red en el sistema. Por ejemplo, <code>ifconfig</code> proporciona detalles como la dirección IP, la dirección MAC y el estado de la conexión de la red.</p>
-                <p><strong>ping:</strong> Envía paquetes de prueba a un destino para verificar la conectividad de la red. Por ejemplo, <code>ping google.com</code> envía paquetes a "google.com" y muestra si hay respuesta, indicando que la conexión a internet funciona.</p>
 
                 <div class="window-cli shadow">
                     <nav>
