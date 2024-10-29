@@ -1,0 +1,54 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.nosotros-content{
+    padding: 8rem 0;
+}
+
+.equipo-grid{
+    @include m.tablet{
+        @include m.grid(repeat(4, 1fr), repeat(3, 1fr)){
+            gap: 2rem;
+        }
+    }
+
+}
+
+
+
+.tarjeta-alumno{
+    
+    padding: 2rem;
+    border-radius: 2rem;
+
+    .imagen-alumno{
+        img{
+            height: 30rem;
+            width: 100%;
+            border-radius: 50%;
+        }
+        &::after{
+            content: "";
+            margin: 2rem 0;
+            display: block;
+            height: 1rem;
+            background-color: v.$azulOscuro;
+        }
+
+        @include m.tablet{
+            img{
+                height: 25rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    .informacion-alumno{
+        p{
+            text-align: left;
+        }
+    }
+    
+}
+
+

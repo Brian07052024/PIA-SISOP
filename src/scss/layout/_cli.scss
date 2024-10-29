@@ -15,9 +15,7 @@
 }
 .cli-intro{
     padding-bottom: 8rem;
-    p{
-        text-align: left;
-    }
+    
     @include m.grid(1fr, auto){
         gap: 2rem;
     }
@@ -26,6 +24,10 @@
         @include m.grid(2fr 1fr, auto){
             gap: 2rem;
         }
+    }
+
+    p{
+        text-align: left;
     }
 
 }

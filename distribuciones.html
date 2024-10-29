@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+<body>
+    <header id="header" class="header inicio-cli">
+        <div class="header-content contenedor">
+            
+            <a href="index.html" class="logo">
+                <img src="build/img/linux_logo.svg" alt="logo" loading="lazy">
+                <h2 class="gradientLogo">Linux</h2>
+            </a>
+            
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="enlaces">
+                    <a href="historia.html">Historia</a>
+                    <a href="distribuciones.html">Distribuciones</a>
+                    <a href="cli.html">CLI</a>
+                    <a href="actualidad.html">Actualidad</a>
+                    <a href="software.html">Software</a>
+                    <div class="toggleMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                        </svg>
+                    </div>
+                </ul>
+            </nav>
+        </div><!--header content -->
+    </header>
+
+    <main>
+        <div class="main-intro contenedor">
+            <div>
+                <h1>Distribuciones de Linux</h1>
+            </div>
+            <div>
+                <h2>¿Qué son las Distribuciones de Linux?</h2>
+                <p>
+                    Las distribuciones de Linux son versiones del sistema operativo Linux, cada una con un conjunto específico de software y configuraciones diseñadas para satisfacer diferentes necesidades de los usuarios. Estas distribuciones son paquetes que incluyen el kernel de Linux, herramientas de GNU, software adicional y un sistema de gestión de paquetes.
+                </p>
+            </div>
+            <img src="src/img/distribuciones.jpeg" alt="">
+        </div>
+    </main>
+    <section class="toggle-bg ejemplos">
+        <div class=" contenedor ">
+            <h1>Principales distribuciones de Linux</h1>
+            <p><strong>Ubuntu:</strong> Popular por su facilidad de uso y una gran comunidad de soporte. Ideal para principiantes.</p>
+            <p><strong>Fedora:</strong> Conocida por estar a la vanguardia de nuevas tecnologías. Preferida por desarrolladores y usuarios avanzados.</p>
+            <p><strong>Debian:</strong> Famosa por su estabilidad y gestión de paquetes sólida. Es la base de muchas otras distribuciones, incluyendo Ubuntu.</p>
+            <p><strong>Arch Linux:</strong> Ofrece una experiencia minimalista y altamente personalizable. Requiere más conocimientos técnicos, ideal para usuarios avanzados.</p>
+            <p><strong>openSUSE:</strong> Proporciona herramientas de administración robustas como YaST. Buena para entornos de desarrollo y servidores.</p>
+            <p><strong>CentOS:</strong> Utilizada en entornos empresariales por su estabilidad y soporte a largo plazo. Es una versión libre de Red Hat Enterprise Linux.</p>
+        </div>
+        
+    </section>
+
+    <section class="comparativa contenedor">
+        <h1>Comparativa de Distribuciones para Diferentes Tipos de Usuarios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Usuario</th>
+                    <th>Distribuciones Recomendadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Principiantes</td>
+                    <td>
+                        <strong>Ubuntu:</strong> Fácil instalación y uso. Gran soporte de comunidad y documentación.<br>
+                        <strong>Linux Mint:</strong> Similar a Ubuntu pero con una interfaz más parecida a Windows, facilitando la transición.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Desarrolladores y Usuarios Avanzados</td>
+                    <td>
+                        <strong>Fedora:</strong> Integración rápida de las últimas tecnologías y herramientas de desarrollo.<br>
+                        <strong>Arch Linux:</strong> Altamente personalizable, ofrece control total sobre el sistema.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Servidores y Entornos Empresariales</td>
+                    <td>
+                        <strong>Debian:</strong> Conocida por su estabilidad y seguridad. Gran elección para servidores.<br>
+                        <strong>CentOS:</strong> Estabilidad y soporte prolongado, ideal para servidores y aplicaciones críticas.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entornos de Desarrollo y Pruebas</td>
+                    <td>
+                        <strong>openSUSE:</strong> Herramientas de administración avanzadas y opciones de virtualización.<br>
+                        <strong>Debian Testing:</strong> Proporciona un equilibrio entre estabilidad y nuevas características.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    
+
+    
+   
+    <footer class="footer">
+        <div class="footer-content contenedor">
+            <p>Equipo 3 todos los derechos reservados 2024</p>
+            <a href="nosotros.html">Nosotros</a>
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>

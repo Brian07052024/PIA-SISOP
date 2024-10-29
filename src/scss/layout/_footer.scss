@@ -8,19 +8,17 @@
 
 .footer-content {
     display: flex;
-    flex-direction: column; // Cambiado de posición
-    justify-content: space-between; // Moved above
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    
 
     @include m.tablet {
         flex-direction: row;
     }
 
-    p {
+    p, a {
         color: v.$blanco;
     }
 
-    .enlaces {
-        visibility: visible;
-        opacity: 1;
-    }
 }

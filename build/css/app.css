@@ -707,6 +707,7 @@ img {
 
 .ventajas .ventajas-listado li {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .ventajas .ventajas-listado ul {
@@ -733,10 +734,6 @@ img {
   gap: 2rem;
 }
 
-.cli-intro p {
-  text-align: left;
-}
-
 @media (min-width: 768px) {
   .cli-intro {
     display: grid;
@@ -745,6 +742,10 @@ img {
     gap: 2rem;
   }
 }
+.cli-intro p {
+  text-align: left;
+}
+
 .bloqueComandos {
   margin-bottom: 3rem;
 }
@@ -897,7 +898,7 @@ img {
   transform: translateX(-5rem);
   opacity: 0;
   flex-direction: column;
-  border-left: 1rem solid rgb(22, 138, 215);
+  border-left: 1rem solid rgb(0, 50, 84);
   padding: 2rem;
   transition: all 0.6s ease;
 }
@@ -916,6 +917,7 @@ img {
 }
 
 .timeLine-block h2 {
+  color: rgb(0, 50, 84);
   margin: 0;
 }
 
@@ -924,7 +926,7 @@ img {
   display: block;
   width: 9rem;
   height: 0.5rem;
-  background-color: rgb(22, 138, 215);
+  background-color: rgb(0, 50, 84);
 }
 
 .timeLine-block p {
@@ -935,7 +937,7 @@ img {
   content: "";
   position: absolute;
   display: block;
-  background-color: rgb(22, 138, 215);
+  background-color: rgb(0, 50, 84);
   width: 3rem;
   height: 3rem;
   border-radius: 50rem;
@@ -955,6 +957,150 @@ img {
   opacity: 1;
 }
 
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+.main-intro p {
+  margin: 0;
+}
+
+.main-intro img {
+  margin-top: 4rem;
+}
+
+.ejemplos {
+  padding: 8rem 0;
+}
+
+.ejemplos p {
+  margin: 0;
+}
+
+.comparativa {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.comparativa h1 {
+  text-align: left;
+}
+
+.comparativa table thead {
+  display: none;
+}
+
+.comparativa table tbody,
+.comparativa table tr,
+.comparativa table td {
+  display: block;
+  width: 100%;
+}
+
+.comparativa table tbody td {
+  text-align: left;
+  padding: 1rem;
+  border: none;
+  position: relative;
+  padding-left: 5rem;
+  font-size: 1.4rem;
+}
+
+.comparativa table tbody td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(34, 255, 0);
+}
+
+.comparativa table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.comparativa table thead th {
+  background-color: rgb(34, 255, 0);
+  color: rgb(34, 255, 0);
+  padding: 1rem;
+  text-align: left;
+}
+
+.comparativa table tbody tr {
+  margin: 0;
+}
+
+.comparativa table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparativa table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.comparativa table tbody tr td {
+  padding: 1.5rem;
+  border: 0.1rem solid #ddd;
+  vertical-align: top;
+  font-size: 1.6rem;
+}
+
+.comparativa table tbody tr td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.comparativa table tbody tr td strong {
+  color: rgb(22, 138, 215);
+}
+
+.nosotros-content {
+  padding: 8rem 0;
+}
+
+@media (min-width: 768px) {
+  .equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.tarjeta-alumno {
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.tarjeta-alumno .imagen-alumno img {
+  height: 30rem;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.tarjeta-alumno .imagen-alumno::after {
+  content: "";
+  margin: 2rem 0;
+  display: block;
+  height: 1rem;
+  background-color: rgb(0, 50, 84);
+}
+
+@media (min-width: 768px) {
+  .tarjeta-alumno .imagen-alumno img {
+    height: 25rem;
+    border-radius: 50%;
+  }
+}
+.tarjeta-alumno .informacion-alumno p {
+  text-align: left;
+}
+
 .footer {
   background-color: rgb(10, 10, 10);
   padding: 2rem 0;
@@ -964,6 +1110,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -971,13 +1118,8 @@ img {
     flex-direction: row;
   }
 }
-.footer-content p {
+.footer-content p, .footer-content a {
   color: rgb(255, 255, 255);
-}
-
-.footer-content .enlaces {
-  visibility: visible;
-  opacity: 1;
 }
 
 .bentoAnimation {
@@ -1085,6 +1227,75 @@ img {
 
 .darkMode .ventajas li {
   color: rgb(255, 255, 255);
+}
+
+.darkMode .linus {
+  border: 0.1rem solid rgb(35, 35, 35);
+  background-color: rgb(10, 10, 10);
+}
+
+.darkMode .linus .linus-content h4 {
+  background-color: rgb(35, 35, 35);
+}
+
+.darkMode .linus .linus-content p:nth-of-type(1) {
+  background-color: rgb(35, 35, 35);
+}
+
+.darkMode .linus .linus-content strong {
+  color: rgb(255, 255, 255);
+}
+
+.darkMode .timeLine {
+  border-left: 1rem solid rgb(255, 255, 255);
+}
+
+.darkMode .timeLine-block {
+  box-shadow: rgb(35, 35, 35) 0 0 1rem 0;
+  background-color: rgb(10, 10, 10);
+}
+
+.darkMode .timeLine-block h2 {
+  color: rgb(255, 255, 255);
+}
+
+.darkMode .timeLine-block h2::after {
+  background-color: rgb(255, 255, 255);
+}
+
+.darkMode .timeLine-block::before {
+  background-color: rgb(255, 255, 255);
+}
+
+.darkMode .comparativa table {
+  color: rgb(255, 255, 255);
+}
+
+.darkMode .comparativa table tbody tr {
+  margin: 0;
+}
+
+.darkMode .comparativa table tbody tr:nth-child(even) {
+  background-color: #565656;
+}
+
+.darkMode .comparativa table tbody tr:nth-child(odd) {
+  background-color: #888888;
+}
+
+.darkMode .comparativa table tbody tr td {
+  padding: 1.5rem;
+  border: 0.1rem solid #ddd;
+  vertical-align: top;
+  font-size: 1.6rem;
+}
+
+.darkMode .tarjeta-alumno {
+  border: 1px black solid;
+}
+
+.darkMode .tarjeta-alumno .imagen-alumno::after {
+  background-color: rgb(20, 20, 20);
 }
 
 .darkMode .shadow {

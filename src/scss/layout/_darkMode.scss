@@ -43,6 +43,90 @@
         }
     }
 
+    .linus{
+        border: 0.1rem solid v.$gris;
+        background-color: v.$negro;
+        
+        .linus-content{
+            h4{
+                background-color: v.$gris;
+     
+            }
+            p{
+                &:nth-of-type(1){
+                    background-color: v.$gris;
+                }
+            }
+            strong{
+                color: v.$blanco;
+            }
+            
+        }
+    }
+
+    .timeLine{
+        border-left: 1rem solid v.$blanco;
+    }
+
+    .timeLine-block{
+        box-shadow: v.$gris 0 0 1rem 0;
+        background-color: v.$negro;
+    
+        h2{
+            color: v.$blanco;
+            &::after{
+                background-color: v.$blanco;
+            }
+        }
+        &::before{
+            background-color: v.$blanco;
+        }
+    }
+
+    .comparativa{
+        table{
+            color: v.$blanco;
+
+
+            tbody {
+                tr{
+                    margin: 0;
+                }
+                
+                tr {
+                    &:nth-child(even) {
+                        background-color: #565656;
+                    }
+    
+                    &:nth-child(odd) {
+                        background-color: #888888;
+                    }
+    
+                    td {
+                        padding: 1.5rem;
+                        border: 0.1rem solid #ddd;
+                        vertical-align: top;
+                        font-size: 1.6rem;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .tarjeta-alumno{
+        border: 1px black solid;
+        .imagen-alumno{
+            &::after{
+                background-color: v.$negroClaro;
+            }
+        }
+    }
+
+
+
+
     .shadow{
         box-shadow:  v.$negro 0rem 0rem 1rem 0rem;
     }
@@ -52,3 +136,4 @@
         font-weight: bold;
     }
 }
+

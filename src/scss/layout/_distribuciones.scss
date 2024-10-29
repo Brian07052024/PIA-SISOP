@@ -1,0 +1,118 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.main-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+    p{
+        margin: 0;
+    }
+    img{
+        margin-top: 4rem;
+    }
+}
+
+.ejemplos{
+    padding: 8rem 0;
+    p{
+        margin: 0;
+    }
+}
+
+.comparativa {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    h1 {
+        text-align: left;
+    }
+
+    table {
+        thead {
+            display: none;
+        }
+
+        tbody,
+        tr,
+        td {
+            display: block;
+            width: 100%;
+        }
+
+        tbody {
+            td {
+                text-align: left;
+                padding: 1rem;
+                border: none;
+                position: relative;
+                padding-left: 5rem;
+                font-size: 1.4rem;
+
+                &::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: v.$verde;
+                }
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2rem;
+
+        thead {
+            th {
+                background-color: v.$verde;
+                color: v.$verde;
+                padding: 1rem;
+                text-align: left;
+            }
+        }
+
+        tbody {
+            tr{
+                margin: 0;
+            }
+            
+            tr {
+                &:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                &:nth-child(odd) {
+                    background-color: #f1f1f1;
+                }
+
+                td {
+                    padding: 1.5rem;
+                    border: 0.1rem solid #ddd;
+                    vertical-align: top;
+                    font-size: 1.6rem;
+
+                    &:first-child {
+                        font-weight: bold;
+                        color: #333;
+                    }
+
+                    strong {
+                        color: v.$azul;
+                    }
+                }
+            }
+        }
+    }
+
+ 
+
+        
+
+
+
+}
