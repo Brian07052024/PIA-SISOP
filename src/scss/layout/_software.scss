@@ -1,0 +1,47 @@
+@use "./base/variables" as v;
+@use "./base/mixins" as m;
+
+.card-grid{
+    margin-top: 2rem;
+    @include m.tablet{
+        @include m.grid(repeat(3, 1fr), auto){
+            gap: 2rem;
+            
+        }
+    }
+}
+
+.card{
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 3rem 0;
+    @include m.tablet{
+        margin: 0;
+    }
+}
+
+.gestores-de-paquetes,
+.compatibilidad-de-software,
+.software{
+    padding: 8rem 0;
+
+    li{
+        text-align: justify;
+        list-style: disc;
+        font-size: 1.8rem;
+    }
+
+    img{
+        margin-top: 2rem;
+    }
+    p{
+        margin: 0;
+        text-align: justify;
+
+    }
+
+    ul{
+        margin-left: 0;
+        padding-left: 2rem;
+    }
+}

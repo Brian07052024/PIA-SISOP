@@ -60,7 +60,7 @@ function animations(){
 
 function textWelcome(){
     if(h1){
-        const text = "Producto Integrador de aprendizaje: Linux";
+        const text = "Producto Integrador De Aprendizaje: Linux";
         let positionText = 0;
 
         writeText();

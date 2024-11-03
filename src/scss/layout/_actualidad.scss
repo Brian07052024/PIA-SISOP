@@ -1,0 +1,48 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.actualidad,
+.servidores,
+.utilidad-servidores,
+.preferencias,
+.embebido,
+.educativo,
+.linux-ventajas_actualidad{
+    padding: 8rem 0;
+
+    li{
+        text-align: justify;
+        list-style: disc;
+        font-size: 1.8rem;
+    }
+
+    img{
+        margin-top: 2rem;
+    }
+    p{
+        margin: 0;
+        text-align: justify;
+
+    }
+
+    ul{
+        margin-left: 0;
+        padding-left: 2rem;
+    }
+}
+
+.servidores{
+    
+    @include m.tablet{
+        @include m.grid(3fr 1fr, auto){
+            gap: 4rem;
+          
+        }
+    }
+    .server{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

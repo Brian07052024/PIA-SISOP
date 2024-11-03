@@ -850,7 +850,7 @@ img {
 @media (min-width: 768px) {
   .historia-origen .historia-intro {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
     gap: 2rem;
   }
@@ -1064,6 +1064,38 @@ img {
   padding: 8rem 0;
 }
 
+.titulo-nosotros {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .logos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.img-logos img {
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .img-logos img {
+    width: 20rem;
+  }
+  .img-logos:nth-of-type(1) {
+    left: 2rem;
+    top: 1rem;
+  }
+  .img-logos:nth-of-type(2) {
+    right: 2rem;
+    top: 1rem;
+  }
+}
 @media (min-width: 768px) {
   .equipo-grid {
     display: grid;
@@ -1073,10 +1105,16 @@ img {
   }
 }
 .tarjeta-alumno {
+  margin: 2rem 0;
   padding: 2rem;
   border-radius: 2rem;
 }
 
+@media (min-width: 768px) {
+  .tarjeta-alumno {
+    margin: 0;
+  }
+}
 .tarjeta-alumno .imagen-alumno img {
   height: 30rem;
   width: 100%;
@@ -1099,6 +1137,141 @@ img {
 }
 .tarjeta-alumno .informacion-alumno p {
   text-align: left;
+}
+
+.ultima {
+  grid-column: 2/5;
+}
+
+.ultima .imagen-alumno img {
+  height: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.actualidad,
+.servidores,
+.utilidad-servidores,
+.preferencias,
+.embebido,
+.educativo,
+.linux-ventajas_actualidad {
+  padding: 8rem 0;
+}
+
+.actualidad li,
+.servidores li,
+.utilidad-servidores li,
+.preferencias li,
+.embebido li,
+.educativo li,
+.linux-ventajas_actualidad li {
+  text-align: justify;
+  list-style: disc;
+  font-size: 1.8rem;
+}
+
+.actualidad img,
+.servidores img,
+.utilidad-servidores img,
+.preferencias img,
+.embebido img,
+.educativo img,
+.linux-ventajas_actualidad img {
+  margin-top: 2rem;
+}
+
+.actualidad p,
+.servidores p,
+.utilidad-servidores p,
+.preferencias p,
+.embebido p,
+.educativo p,
+.linux-ventajas_actualidad p {
+  margin: 0;
+  text-align: justify;
+}
+
+.actualidad ul,
+.servidores ul,
+.utilidad-servidores ul,
+.preferencias ul,
+.embebido ul,
+.educativo ul,
+.linux-ventajas_actualidad ul {
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .servidores {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    gap: 4rem;
+  }
+}
+.servidores .server {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grid {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+}
+.card {
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin: 0;
+  }
+}
+.gestores-de-paquetes,
+.compatibilidad-de-software,
+.software {
+  padding: 8rem 0;
+}
+
+.gestores-de-paquetes li,
+.compatibilidad-de-software li,
+.software li {
+  text-align: justify;
+  list-style: disc;
+  font-size: 1.8rem;
+}
+
+.gestores-de-paquetes img,
+.compatibilidad-de-software img,
+.software img {
+  margin-top: 2rem;
+}
+
+.gestores-de-paquetes p,
+.compatibilidad-de-software p,
+.software p {
+  margin: 0;
+  text-align: justify;
+}
+
+.gestores-de-paquetes ul,
+.compatibilidad-de-software ul,
+.software ul {
+  margin-left: 0;
+  padding-left: 2rem;
 }
 
 .footer {
@@ -1296,6 +1469,55 @@ img {
 
 .darkMode .tarjeta-alumno .imagen-alumno::after {
   background-color: rgb(20, 20, 20);
+}
+
+.darkMode .actualidad,
+.darkMode .servidores,
+.darkMode .utilidad-servidores,
+.darkMode .preferencias,
+.darkMode .embebido,
+.darkMode .educativo,
+.darkMode .linux-ventajas_actualidad,
+.darkMode .gestores-de-paquetes,
+.darkMode .compatibilidad-de-software,
+.darkMode .software {
+  padding: 8rem 0;
+}
+
+.darkMode .actualidad li,
+.darkMode .servidores li,
+.darkMode .utilidad-servidores li,
+.darkMode .preferencias li,
+.darkMode .embebido li,
+.darkMode .educativo li,
+.darkMode .linux-ventajas_actualidad li,
+.darkMode .gestores-de-paquetes li,
+.darkMode .compatibilidad-de-software li,
+.darkMode .software li {
+  color: rgb(255, 255, 255);
+  list-style: disc;
+  font-size: 1.8rem;
+}
+
+.darkMode .actualidad p,
+.darkMode .servidores p,
+.darkMode .utilidad-servidores p,
+.darkMode .preferencias p,
+.darkMode .embebido p,
+.darkMode .educativo p,
+.darkMode .linux-ventajas_actualidad p,
+.darkMode .gestores-de-paquetes p,
+.darkMode .compatibilidad-de-software p,
+.darkMode .software p {
+  margin: 0;
+}
+
+.darkMode .server {
+  filter: invert(1);
+}
+
+.darkMode .card-grid .card {
+  background-color: rgb(35, 35, 35);
 }
 
 .darkMode .shadow {

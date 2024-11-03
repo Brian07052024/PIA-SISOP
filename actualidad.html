@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+<body>
+    <header id="header" class="header inicio-cli">
+        <div class="header-content contenedor">
+            
+            <a href="index.html" class="logo">
+                <img src="build/img/linux_logo.svg" alt="logo" loading="lazy">
+                <h2 class="gradientLogo">Linux</h2>
+            </a>
+            
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="enlaces">
+                    <a href="historia.html">Historia</a>
+                    <a href="distribuciones.html">Distribuciones</a>
+                    <a href="cli.html">CLI</a>
+                    <a href="actualidad.html">Actualidad</a>
+                    <a href="software.html">Software</a>
+                    <a href="nosotros.html">Nosotros</a>
+
+                    <div class="toggleMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                        </svg>
+                    </div>
+                </ul>
+            </nav>
+        </div><!--header content -->
+    </header>
+
+    <main>
+        <section class="actualidad contenedor">
+            <h1>Linux en el Mundo Actual</h1>
+            <p>Linux es uno de los sistemas operativos más utilizados en servidores, desarrollo de software y dispositivos embebidos.</p>
+            <p>
+                Hoy en día, Linux es utilizado en una amplia gama de dispositivos y sistemas, desde servidores web y supercomputadoras hasta dispositivos móviles y sistemas de IoT. Más del 90% de los servidores en la nube están basados en Linux, y es el sistema operativo de elección para la mayoría de las supercomputadoras a nivel mundial.
+            </p>
+            <img src="src/img/actualidad.jpg" alt="">
+        </section>
+      
+        <div class="toggle-bg">
+            <section class="servidores contenedor">
+                <div>
+                    <h2>¿Qué es un Servidor Linux?</h2>
+                    <p>Un servidor Linux es un servidor impulsado por el sistema operativo de código abierto Linux. Ofrece a las empresas una opción de bajo costo para entregar contenido, aplicaciones y servicios a sus clientes. Gracias a su naturaleza de código abierto, los usuarios también se benefician de una comunidad sólida de recursos y soporte.</p>
+                    <p>Cada variedad de servidor Linux está diseñada con distintos usos en mente:</p>
+                    <ul>
+                        <li>Para servidores web, es común utilizar CentOS®.</li>
+                        <li>Para aplicaciones que manejan grandes volúmenes de usuarios, se prefieren soluciones como Red Hat® Enterprise o Ubuntu Server.</li>
+                        <li>Para necesidades empresariales específicas, un servidor TurnKey Linux puede ser suficiente.</li>
+                    </ul>
+                </div>
+
+                <div class="server">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                        <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
+                    </svg>
+                </div>
+            </section>
+        </div>
+      
+        <section class="utilidad-servidores contenedor">
+            <h2>¿Por Qué Utilizar Servidores Linux?</h2>
+            <ul>
+                <li><strong>Desempeño:</strong> Los servidores Linux ofrecen el rendimiento necesario para una infraestructura eficiente.</li>
+                <li><strong>Seguridad:</strong> Permiten una optimización avanzada en permisos de seguridad.</li>
+                <li><strong>Estabilidad:</strong> Impulsados por tecnología de código abierto, cuentan con capacidades de imagen avanzadas.</li>
+                <li><strong>Escalabilidad:</strong> Linux facilita la integración con tecnologías en la nube para escalar empresas fácilmente.</li>
+            </ul>
+        </section>
+      
+        <div class="toggle-bg">
+            <section class="preferencias contenedor">
+                <h2>¿Por Qué Linux es el Sistema Operativo Preferido de los Desarrolladores?</h2>
+                <p>Linux es uno de los sistemas operativos más potentes y seguros, ideal para desarrolladores de todos los niveles. Su código abierto y gratuidad lo hacen ideal para el desarrollo de sistemas operativos, aplicaciones móviles y software empresarial.</p>
+                <p>Algunos programas comunes para Linux incluyen OBS, VLC, LibreOffice, VI (editor de texto) y Geary (cliente de correo).</p>
+                <p>La comunidad de Linux es un motor de innovación que promueve un ambiente de colaboración y libre acceso al conocimiento.</p>
+            </section>
+        </div>
+      
+        <section class="embebido contenedor">
+            <h2>Linux Embebido</h2>
+            <p>Linux embebido es un tipo de kernel Linux diseñado para su uso en dispositivos o sistemas empotrados. Es una versión optimizada y reducida del sistema operativo, adaptada a las necesidades de sistemas embebidos con limitaciones de potencia y tamaño.</p>
+            <p>Linux embebido es flexible, de bajo costo, de código abierto y soporta múltiples proveedores de software. A diferencia de sistemas embebidos propietarios, permite la modificación y redistribución del código fuente.</p>
+            <img src="src/img/embebido.png" alt="">
+        </section>
+      
+        <div class="toggle-bg">
+            <section class="linux-ventajas_actualidad contenedor">
+                <h2>Ventajas de Linux en Comparación con Otros Sistemas Operativos</h2>
+                <ul>
+                    <li>Es open source y gratuito.</li>
+                    <li>Basado en UNIX.</li>
+                    <li>Bajo consumo de recursos y alto rendimiento.</li>
+                    <li>Seguridad robusta gracias a una comunidad activa.</li>
+                    <li>Gran estabilidad.</li>
+                    <li>Personalización avanzada.</li>
+                    <li>Amplia variedad de distribuciones para distintos requisitos.</li>
+                    <li>Compatibilidad con diversos dispositivos de hardware.</li>
+                    <li>Ideal para computadoras de sobremesa, portátiles y servidores.</li>
+                    <li>Preferido por los desarrolladores y líder en servicios y supercomputadoras.</li>
+                </ul>
+            </section>
+        </div>
+      
+        <section class="educativo contenedor">
+            <h2>Linux en el Sector Educativo y Corporativo</h2>
+            <p>Linux proporciona una infraestructura sólida y escalable, ideal para organizaciones en crecimiento. Empresas como Google, Facebook y Amazon utilizan Linux para gestionar grandes volúmenes de información eficientemente.</p>
+            <p>En la educación, enseñar Software Libre y Linux es crucial para la independencia tecnológica y la equidad en el acceso a la tecnología, desarrollando habilidades técnicas en los estudiantes.</p>
+            <ul>
+                <li><strong>Independencia Tecnológica:</strong> Promueve la autonomía de países latinoamericanos frente a tecnologías propietarias.</li>
+                <li><strong>Acceso Equitativo:</strong> La gratuidad y accesibilidad de Linux facilitan la inclusión digital en la educación.</li>
+                <li><strong>Desarrollo de Habilidades:</strong> Los estudiantes aprenden programación, configuración de sistemas y seguridad informática, habilidades valoradas en el mercado laboral.</li>
+            </ul>
+            <img src="src/img/corporativo.png" alt="">
+        </section>
+    </main>
+    
+      
+
+    
+   
+    <footer class="footer">
+        <div class="footer-content contenedor">
+            <p>Equipo 3 todos los derechos reservados 2024</p>
+            <a href="nosotros.html">Nosotros</a>
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>

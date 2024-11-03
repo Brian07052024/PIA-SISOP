@@ -14,7 +14,7 @@
             margin: 0;
         }
         @include m.tablet{
-            @include m.grid(4fr 1fr, auto){
+            @include m.grid(3fr 1fr, auto){
                 gap: 2rem;
             }
         }

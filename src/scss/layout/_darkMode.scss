@@ -124,6 +124,40 @@
         }
     }
 
+    .actualidad,
+    .servidores,
+    .utilidad-servidores,
+    .preferencias,
+    .embebido,
+    .educativo,
+    .linux-ventajas_actualidad,
+    .gestores-de-paquetes,
+    .compatibilidad-de-software,
+    .software{
+        padding: 8rem 0;
+
+        li{
+            color: v.$blanco;
+            list-style: disc;
+            font-size: 1.8rem;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+
+    .server{
+        filter: invert(1);
+    }
+
+    .card-grid{
+        .card{
+            background-color: v.$gris;
+        }
+    }
+
+
 
 
 
