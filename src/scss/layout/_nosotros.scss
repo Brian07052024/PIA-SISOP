@@ -110,3 +110,44 @@
 }
 
 
+.references {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .references h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #444;
+  }
+  
+  .references ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .references li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .references em {
+    font-style: italic;
+    color: #333;
+  }
+  
+  .references a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .references a:hover {
+    text-decoration: underline;
+  }
+  
+
+

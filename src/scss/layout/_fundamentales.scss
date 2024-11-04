@@ -1,0 +1,48 @@
+@use "./base/variables" as v;
+@use "./base/mixins" as m;
+
+
+.fundamental-content{
+    padding: 8rem 0;
+    h1{
+        margin-bottom: 8rem;
+    }
+}
+.fundamental-card{
+    display: flex;
+    padding: 2rem;
+    
+}
+
+.fundamental-image{
+    width: 25rem;
+    height: auto;
+    padding-right: 2rem;
+    img{
+        border-radius: 1rem;
+    }
+
+}
+
+.fundamental-text{
+    padding-left: 2rem;
+    border-left: .1rem solid rgb(162, 162, 162);
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.btn-descarga{
+    display: flex;
+    border: 1px solid green;
+    background-color: green;
+    color: v.$blanco;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 20rem;
+}

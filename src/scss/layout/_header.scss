@@ -44,7 +44,7 @@
     img{
         width: 8rem;
     }
-    @include m.tablet{
+    @include m.desktop{
         flex-direction: row;
     }
     

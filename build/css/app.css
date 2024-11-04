@@ -437,7 +437,7 @@ img {
   width: 8rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header-content {
     flex-direction: row;
   }
@@ -1149,6 +1149,45 @@ img {
   border-radius: 1rem;
 }
 
+.references {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.references h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #444;
+}
+
+.references ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.references li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.references em {
+  font-style: italic;
+  color: #333;
+}
+
+.references a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
 .actualidad,
 .servidores,
 .utilidad-servidores,
@@ -1272,6 +1311,53 @@ img {
 .software ul {
   margin-left: 0;
   padding-left: 2rem;
+}
+
+.fundamental-content {
+  padding: 8rem 0;
+}
+
+.fundamental-content h1 {
+  margin-bottom: 8rem;
+}
+
+.fundamental-card {
+  display: flex;
+  padding: 2rem;
+}
+
+.fundamental-image {
+  width: 25rem;
+  height: auto;
+  padding-right: 2rem;
+}
+
+.fundamental-image img {
+  border-radius: 1rem;
+}
+
+.fundamental-text {
+  padding-left: 2rem;
+  border-left: 0.1rem solid rgb(162, 162, 162);
+}
+
+.fundamental-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-descarga {
+  display: flex;
+  border: 1px solid green;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 20rem;
 }
 
 .footer {
@@ -1592,4 +1678,8 @@ img {
   51%, 100% {
     opacity: 0;
   }
+}
+
+p, h1, h2, h3, h4, li, ul, a{
+  text-align: justify;
 }
